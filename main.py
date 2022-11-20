@@ -99,7 +99,7 @@ def sort_explore(to_sort):
     return to_sort
 
 
-base_dir = './../../../../../../'
+base_dir = './../../'
 
 print("Started with base dir " + str(base_dir))
 
