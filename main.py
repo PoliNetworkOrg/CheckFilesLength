@@ -24,6 +24,8 @@ def is_valid_type(mypath):
         return False
     if '/$RECYCLE.BIN\\' in mypath:
         return False
+    if '/_actions/actions/checkout/' in mypath:
+        return False
 
     file_extension = file[len(file) - 1]
 
