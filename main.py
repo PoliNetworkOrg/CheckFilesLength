@@ -29,7 +29,7 @@ def is_valid_type(mypath):
 
     file_extension = file[len(file) - 1]
 
-    if file_extension == "ts" or file_extension == 'tsx':
+    if file_extension == "ts" or file_extension == 'tsx' or file_extension == 'cs':
         return True
     return False
 
