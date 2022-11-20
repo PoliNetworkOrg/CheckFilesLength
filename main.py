@@ -18,6 +18,8 @@ def is_valid_type(mypath):
         return False
     if '.vscode\\extensions\\' in mypath:
         return False
+    if 'AppData\\Roaming\\' in mypath:
+        return False
 
     file_extension = file[len(file) - 1]
 
@@ -93,7 +95,7 @@ def sort_explore(to_sort):
     return to_sort
 
 
-base_dir = './../../../'
+base_dir = './../../../../'
 
 print("Started with base dir " + str(base_dir))
 
